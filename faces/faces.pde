@@ -7,9 +7,9 @@ OpenCV opencv;
 PImage img, img2;
 
 void setup() {
-  size(640, 480);
-  video = new Capture(this, 640/2, 480/2);
-  opencv = new OpenCV(this, 640/2, 480/2);
+  size(800, 800);
+  video = new Capture(this, 800/2, 800/2);
+  opencv = new OpenCV(this, 800/2, 800/2);
   opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
 
   video.start();
@@ -36,9 +36,9 @@ void draw() {
     //rect(faces[i].x, faces[i].y, faces[i].width, faces[i].height);
     
     if(keyPressed){
-      image(img2, faces[i].x-54,faces[i].y-75,faces[i].width+100,faces[i].height+100);
+      image(img2, faces[i].x-95,faces[i].y-140,faces[i].width+300,faces[i].height+300);
     }
-    else{image(img, faces[i].x-54,faces[i].y-25,faces[i].width+100,faces[i].height+100);
+    else{image(img, faces[i].x-95,faces[i].y-60,faces[i].width+200,faces[i].height+200);
     }
   }
 }
