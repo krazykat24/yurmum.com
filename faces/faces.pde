@@ -1,6 +1,12 @@
 import gab.opencv.*;
 import processing.video.*;
 import java.awt.*;
+import processing.sound.*;
+
+
+
+SoundFile file;
+
 
 Capture video;
 OpenCV opencv;
@@ -11,7 +17,8 @@ void setup() {
   video = new Capture(this, 800/2, 800/2);
   opencv = new OpenCV(this, 800/2, 800/2);
   opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
-
+  file=new SoundFile(this, "bob.mp3");
+  file.play();
   video.start();
   img =loadImage("im.png");
   img2=loadImage("yurmum.png");
