@@ -95,7 +95,7 @@ void draw() {
   }
   else if(i<350)
   {
-    text("gooder is da best wurd eva", 25,25);
+    text("burn roasted ohhhhhhhhhhhh", 25,25);
     fill(254, 0, 0);
   }
   else if(i<370)
